@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS BARBER Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+    header .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1.2rem;
+    }
+    .btn-book {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #666;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btn-book:hover {
+      background: #444;
+    }
+    .btn-sticky {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #666;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .btn-sticky:hover {
+      background: #444;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .calendar {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 700px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="IMG_2098.jpeg" alt="Barbershop">
+    <div class="overlay">
+      <h1>RSBARBER</h1>
+      <p>Boka din tid nu!</p>
+      <a href="#calendar-section" class="btn-book">📅 Boka tid</a>
+    </div>
+  </header>
+
+  <!-- Sticky button -->
+  <a href="#calendar-section" class="btn-sticky">📅 Boka tid</a>
+
+  <div class="container" id="calendar-section">
+    <h2>Kalenderbokning</h2>
+    <p>Välj en ledig tid i kalendern nedan för att boka din klippning eller trimning.</p>
+    <div class="calendar">
+      <!-- Calendly embed med din länk -->
+      <iframe src="https://calendly.com/rsbarber-foretag/30min" frameborder="0"></iframe>
+    </div>
+  </div>
+</body>
+</html>
